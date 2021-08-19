@@ -1,0 +1,209 @@
+/* 8 10 12 16 20 24 28 34 40 48 58*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Cambria;
+	color: black;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+h1,
+h2 {
+	font-family: "Noto Serif KR";
+}
+
+h2 {
+	font-size: 40px;
+}
+
+.btn {
+	width: 200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 900px;
+	display: inline-block;
+	text-align: center;
+}
+
+.btn--transparent:link,
+.btn--transparent:visited {
+	color: #6f1eaa;
+}
+
+.btn--filled:link,
+.btn--filled:visited {
+	color: #fff;
+}
+
+.purple-underline:link,
+.purple-underline:visited {
+	color: #6f1eaa;
+	text-decoration: underline;
+}
+
+.both-sides {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* #f5a61c .logobrand , ##6F1EAA*/
+
+/* Header - Nav */
+
+.nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* when "Fixed" loose full width available */
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 999;
+}
+
+.nav-left {
+	display: flex;
+	gap: 30px;
+}
+.logo-brand {
+	fill: #f5a61c;
+}
+.nav-right {
+	display: flex;
+	gap: 60px;
+	/* align-items: center; */
+	/* text-align: center; */
+	align-self: flex-end;
+}
+.btn--transparent {
+	/* background-color:none; */
+	border: 2px #6f1eaa solid;
+}
+.btn--filled {
+	background-color: #6f1eaa;
+}
+
+/* Section 1- Intro */
+
+main {
+	/* tà đạo- not know how to clear height collapsing of "fixed" container */
+	/* margin-top: 400px; */
+}
+
+.section-intro {
+	text-align: center;
+	padding-top: 400px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 200px;
+	background-color: #fff5f5;
+	/*  20 24 28 34 40  */
+}
+.headline-center {
+	margin-bottom: 60px;
+	font-size: 48px;
+}
+.sub-headline-center {
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+.section-intro .btn:link,
+.section-intro .btn:visited {
+	font-size: 28px;
+}
+
+/* Section 2- Rise problems */
+
+.section-problems {
+	display: flex;
+	gap: 100px;
+	background-color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.column-1 {
+}
+.headline-problems {
+}
+.column-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	/* justify-content: space-between; */
+}
+.purple-headline {
+	/*  20 24 28 34  */
+	font-size: 34px;
+	color: #6f1eaa;
+	margin-bottom: 10px;
+}
+.describe-text {
+}
+
+.column-2 article {
+	border-bottom: 2px #f5a61c solid;
+	padding-bottom: 40px;
+}
+
+.column-2 article:nth-child(3) {
+	border-bottom: 10px;
+}
+
+/* Section 3- How it works */
+
+.section-how {
+	background-color: rgba(0, 0, 0, 0.062);
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+.h2-center {
+	margin-bottom: 30px;
+}
+.container-3-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.container-3-box article {
+	/* article = container, not take full with available, anymore */
+	/* display: inline-block; */
+	flex: 0 1 30%;
+}
+.behind-background {
+	/* width: 100%; */
+	position: relative;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-color: #f0bd64;
+	margin: 0 auto;
+}
+
+.behind-background img {
+	width: 100%;
+}
+
+.container-3-box img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Section 4-  Testimonial */
+
+/* Footer */
